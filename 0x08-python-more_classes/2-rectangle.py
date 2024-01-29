@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-Defines a class Rectangle
-"""
+"""Defines a class Rectangle"""
 
 
 class Rectangle:
-    """Represents a rectangle"""
+    """Representation of a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
         self.width = width
@@ -29,7 +27,7 @@ class Rectangle:
     def height(self):
         """getter for the private instance attribute height"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """setter for the private instance attribute height"""
@@ -47,4 +45,4 @@ class Rectangle:
         """returns the perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        return (self.__width * 2) + (self._height * 2)
+        return (self.__width * 2) + (self.__height * 2)
