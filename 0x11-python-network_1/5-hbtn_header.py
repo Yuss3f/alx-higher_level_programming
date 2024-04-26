@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
 Sending a request to the URL and displaying the value of the variable X-Request-Id
-in the response header"""
+in the response header
+
+"""
 
 if __name__ == '__main__':
     from requests import get
